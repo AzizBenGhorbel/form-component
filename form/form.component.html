@@ -1,0 +1,70 @@
+<div class="container" id="pdf-content">
+  <h2>Informations de la facture</h2>
+  <div class="form-group">
+    <div class="form-half">
+      <label>Date facturation</label>
+      <input type="date" />
+    </div>
+    <div class="form-half">
+      <label>Montant TTC</label>
+      <input type="number" />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-half">
+      <label>Numéro de la facture</label>
+      <input type="text" />
+    </div>
+    <div class="form-half">
+      <label>Taux de la retenue</label>
+      <select>
+        <option>Select...</option>
+      </select>
+      <a href="#">Quel taux choisir ?</a>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <div class="form-col">
+      <h2>Informations de l'entreprise</h2>
+      <div class="form-group">
+        <label>Raison sociale</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Adresse</label>
+        <textarea></textarea>
+      </div>
+      <div class="form-group">
+        <label>Matricule fiscale / Identifiant unique</label>
+        <input type="text" />
+      </div>
+    </div>
+    <div class="form-col">
+      <h2>Informations du client</h2>
+      <div class="radio-group">
+        <input type="radio" id="entreprise" name="client-type" checked />
+        <label for="entreprise">Entreprise</label>
+        <input type="radio" id="personne-physique" name="client-type" />
+        <label for="personne-physique">Personne physique</label>
+      </div>
+      <div class="form-group">
+        <label>Raison sociale</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Adresse</label>
+        <textarea></textarea>
+      </div>
+      <div class="form-group">
+        <label>Matricule fiscale / Identifiant unique</label>
+        <input type="text" />
+      </div>
+    </div>
+  </div>
+
+  <div class="button-group">
+    <button type="button" class="preview">Prévisualiser</button>
+    <button type="button" class="download" (click)="downloadPDF()">Télécharger</button>
+  </div>
+</div>
